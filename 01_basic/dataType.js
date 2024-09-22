@@ -92,3 +92,25 @@ Return type of variables in JavaScript
        Object  =>  object
 
 */
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//there are two types of memory
+// 1. Stack (used in primitive datatypes)    2. Heap(non - primitive datatypes)
+
+let myyoutubename = "hiteshchaudharydotcom";
+let anotherName = myyoutubename;
+anotherName = "chai aur code";
+
+console.log(myyoutubename);   //hiteshchaudharydotcom
+console.log(anotherName);     //chai aur code
+
+let userOne = {
+    email : "userone@gmail.com",
+    upi : "user@byl"
+}
+let userTwo = userOne;
+userTwo.email = "usertwo@gmail.com"  // this statement change both email ID's of userone and usertwo because in non-primtive datatype when we copied one variable into another then its reference is pass
+
+console.log(userOne);   //{ email: 'usertwo@gmail.com', upi: 'user@byl' }
+console.log(userTwo);   //{ email: 'usertwo@gmail.com', upi: 'user@byl' }
