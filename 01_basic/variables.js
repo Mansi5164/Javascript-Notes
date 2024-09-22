@@ -6,7 +6,7 @@ const accountId = 144553
 //let is global variable
 let accountEmail = "mansi123@gmail.com"
 
-//var datatype --> its validity is only in curly braces because of issue in block scope and functional scope
+//var datatype --> prefer not to use var because its validity is only in curly braces and issue in block scope and functional scope
 var accountPass = "12345"
 accountCity = "Jaipur"
 
@@ -20,3 +20,10 @@ accountCity = "Punjab"
 
 //to print data in tabular form
 console.table([accountId,accountEmail,accountPass,accountCity,accountState])
+
+
+const name = "Mansi";
+let email = "mansigarg@gmail.com";
+let age = 18;
+var CGPA = 9.34;
+console.table( [name,email,age,CGPA] );
