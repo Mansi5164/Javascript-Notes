@@ -26,20 +26,20 @@ console.log("day:",day);
 console.log("month:",month);
 
 let myDate = new Date();
-// console.log(myDate);
-// console.log(myDate.toLocaleDateString());
-// console.log(myDate.toDateString());
-// console.log(typeof myDate);     //object
+console.log(myDate);
+console.log(myDate.toLocaleDateString());
+console.log(myDate.toDateString());
+console.log(typeof myDate);     //object
 
 
 // agr hmm apnii trff se koi date print krana chahte hai toh
-//let d = new Date(2023,0,23);         // ( year , month , date )
+// let d = new Date(2023,0,23);         // ( year , month , date )
 let d = new Date("01/14/2023");
-//console.log(d.toLocaleDateString());
+console.log(d.toLocaleDateString());
 
 
 let myTimestamp = Date.now();
-// console.log(myTimestamp);
-// console.log(d.getTime());
+console.log(myTimestamp);
+console.log(d.getTime());
 //to convert miliseconds in seconds
-// console.log(Math.floor(myTimestamp/1000));
+console.log(Math.floor(myTimestamp/1000));
