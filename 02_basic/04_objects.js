@@ -85,5 +85,23 @@ const user = [
 
 
 //to check value is present or not
-console.log(tinderUser2.hasOwnProperty('name'));
-console.log(tinderUser2.hasOwnProperty('isloggedin'));
+// console.log(tinderUser2.hasOwnProperty('name'));
+// console.log(tinderUser2.hasOwnProperty('isloggedin'));
+
+const course = {
+    courseName : "JS-IN-HINDI",
+    price : "999",
+    courseInstructor : "Hitesh"
+}
+
+//destructure objects
+const {courseInstructor : Instructor,courseName : name} = course;
+console.log(Instructor);
+console.log(name);
+
+//JSON DATA 
+// {
+//     "name" :"hitesh",
+//     "course ": "javascript",
+//     "price" : "free"
+// }
