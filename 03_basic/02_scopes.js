@@ -15,6 +15,31 @@ function one(){
     }
     // console.log(website);
 
-    // two();
+    // two();       //error
 }
 one();
+
+if(true){
+    const username = "hitesh";
+    if(true){
+        const website = " youtube";
+        // console.log(username + website);
+    }
+    // console.log(website);       //throw error
+}
+// console.log(username);      //throw error
+
+
+
+// ++++++++++++++++++++++ INTERESTING ++++++++++++++++++++++++
+
+function addOne(value){     //this function can be accessed anywhere
+    return value+1;
+}
+addOne(5);
+
+const addTwo = function(num){       //we cannot access this function before declaration
+    return num+2;
+}
+
+addTwo(5);
