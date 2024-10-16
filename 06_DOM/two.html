@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM | Chai aur code</title>
+</head>
+<body class="bgc">
+    <div class="parent">
+        <!-- div.classname*number -->
+        <div class="day"><b>Monday</b></div>
+        <div class="day"><b>Tuesday</b></div>
+        <div class="day"><b>Wednesday</b></div>
+        <div class="day"><b>Thursday</b></div>
+        <div class="day"><b>Friday</b></div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1]);
+    // console.log(parent.children[1].innerHTML);
+
+    for(let i = 0 ; i < parent.children.length;i++){
+        // console.log(parent.children[i].innerHTML);
+    }
+    parent.children[1].style.color = "green";
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    const day1 = document.querySelector('.day');
+    // console.log(day1);
+    // console.log(day1.parentElement );
+    // console.log(day1.nextElementSibling);
+    // console.log(day1.nextSibling);
+    console.log("NODES : ",parent.childNodes);
+</script>
+</html>
