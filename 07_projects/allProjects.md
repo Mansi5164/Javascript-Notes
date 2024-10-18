@@ -132,6 +132,37 @@
         */
 </script>
 </html>
+```
 
+# Project 3
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #clock{
+            height:30px;
+            width:100px;
+            background-color: rgb(224, 100, 28);
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner"><h1>Your local Time</h1></div>
+    <div id="clock"></div>
+</body>
+<script>
+    const block = document.getElementById('clock');
 
+    let date = new Date();
+    document.write(`<h3>Today date is : ${date.toLocaleDateString()}</h3>`);
+
+    setInterval(function(){
+        let date = new Date();
+        clock.innerHTML = date.toLocaleTimeString();
+    },1000);
+</script>
+</html>
 ```
