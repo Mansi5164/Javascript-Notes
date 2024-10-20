@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(88, 82, 82)">
+    <h2 style="color: white;">Amazing Images</h2>
+    <ul id="images" style="color:white;">
+        <li><img src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cml2ZXJ8ZW58MHx8MHx8fDA%3D" id="nature" width="250px" />
+        </li>
+        <li><img src="https://plus.unsplash.com/premium_photo-1703806517546-581595edd4e4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D" id="handflower" width="200px">
+        </li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCneaphMG9Ga8rOk6zNROkMRT1AZDQMtsotA&s" id="owl" width="200px">
+        </li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMGfR_Gsb0EyRsCsiysznYZOKsjEDBvpSLBQ&s" id="flower" width="200px">
+        </li>
+        <li><a style="color:aliceblue;" href="https://www.google.com/search?q=gogle&oq=gogle&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTINCAEQLhjHARjRAxiABDIVCAIQLhgKGIMBGMcBGLEDGNEDGIAEMg8IAxAAGAoYgwEYsQMYgAQyCQgEEAAYChiABDIHCAUQABiABDIJCAYQABgKGIAEMgcIBxAAGIAE0gEJMjkzNmowajE1qAIIsAIB&sourceid=chrome&ie=UTF-8" id="google">Google</a></li>
+    </ul>
+    
+</body>
+<script>
+    document.getElementById('images').addEventListener('click',(event) => {
+        //console.log(event);
+       // console.log(event.target);
+        //console.log(event.target.parentNode);
+        //console.log(event.target.tagName);
+        if(event.target.tagName == 'IMG'){
+            let removeit = event.target.parentNode;
+            removeit.remove();
+        }
+        //let removeit = event.target.parentNode;
+
+        //removeit.remove();
+        //removeit.parentNode.removeChild(removeit);
+    },false)
+</script>
+<!-- <script>
+    /*
+    document.getElementById('owl').onclick=function(){
+        alert('Owl');
+    }
+
+    document.getElementById('owl').addEventListener('click',function(){
+        alert('owl clicked again');
+    },false)
+    */
+
+    //attackEvent()
+    //jQuery() - on
+
+    //type, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget,
+    //clientX, clientY, screenX, screenY
+    //altkey , ctrlkey, shiftkey, keyCode
+/*
+    document.getElementById('images').addEventListener('click',function(event){
+        console.log("clicked inside the ul");
+    },false)
+
+    document.getElementById('owl').addEventListener('click',function(event){
+        console.log("owl clicked");
+        event.stopPropagation();    //stops bubbling 
+    },false)*/
+
+    /*
+    eventPropagation -> iske do contest hote hai
+    1.Event bubbling = default(false) -> (bottom to top)
+    2.Event capturing = top to bottom
+    */
+    /*
+    document.getElementById('google').addEventListener('click',function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        console.log("google clicked");
+    },false)
+    */
+</script> -->
+</html>
